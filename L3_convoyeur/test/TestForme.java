@@ -1,4 +1,4 @@
-package L3_convoyeur.test;
+package test;
 
 public class TestForme {
     
