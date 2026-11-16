@@ -27,13 +27,13 @@ Dépôt Git pour le TD de Génie Logiciel sur les convoyeurs
 - [ ] Écrire le scénario de test n°9 : vérifier les destinations de trois convoyeurs placés successivement.
 - [ ] Écrire le scénario de test n°9bis : appeler `update()` avec des formes sur C1 et C3. Réussite : C2 contient f1 et C3 contient f3.
 - [ ] Écrire le scénario de test n°10 : créer un schéma de plusieurs convoyeurs, lister les formes présentes, appeler `update()` plusieurs fois et vérifier que la liste des formes reste identique.
-- [ ] Écrire la classe Forme.
+- [x] Écrire la classe Forme.
 - [ ] Écrire les tests unitaires de la classe Forme.
-- [ ] Écrire la classe CelluleOriente et son enum.
+- [x] Écrire la classe CelluleOriente et son enum.
 - [ ] Écrire les tests unitaires de la classe CelluleOriente.
-- [ ] Écrire la classe Cellule.
+- [x] Écrire la classe Cellule.
 - [x] Écrire les tests unitaires de la classe Cellule, notamment la vérification de `estlibre()`. (Louis Cambier)
-- [ ] Écrire la classe Tapis, avec un constructeur prenant une cellule vide, une direction d’entrée et une direction de sortie.
+- [x] Écrire la classe Tapis, avec un constructeur prenant une cellule vide, une direction d’entrée et une direction de sortie.
 - [ ] Écrire les tests unitaires de la classe Tapis.
 - [ ] Écrire la méthode `update()` de la classe Grille.
 - [ ] Écrire le reste de la classe Grille.
