@@ -5,10 +5,10 @@ public class Cellule {
     private int y;
     private Convoyeur convoyeur;
 
-    Cellule(int pos_x, int pos_y, Convoyeur conv) {
+    Cellule(int pos_x, int pos_y) {
         this.x = pos_x;
         this.y = pos_y;
-        this.convoyeur = conv;
+        this.convoyeur = null;
     }
 
     public boolean est_libre() {
