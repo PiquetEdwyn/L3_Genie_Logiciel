@@ -1,3 +1,5 @@
+package src;
+
 import java.util.ArrayList;
 import java.util.Observer;
 
@@ -50,7 +52,7 @@ public abstract class Convoyeur {
     /*
         Getter pour Observer
     */
-    public ArrayList<Oberserver> getOberserver()
+    public ArrayList<Observer> getOberserver()
     {
         return  this.observer;
     }
@@ -68,7 +70,7 @@ public abstract class Convoyeur {
     */
     public Machine destination()
     {
-        return 
+        return null;
     }
 
     /*
@@ -103,7 +105,7 @@ public abstract class Convoyeur {
     */
     public void ajouterForme()
     {
-        this.fomre = this.stockage
+        this.forme = this.stockage;
         this.stockage = null;
     }
 
@@ -112,6 +114,6 @@ public abstract class Convoyeur {
     */
    public Cellule emplacement()
    {
-
+        return null;
    }
 }

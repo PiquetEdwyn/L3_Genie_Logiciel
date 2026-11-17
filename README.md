@@ -17,10 +17,10 @@ Dépôt Git pour le TD de Génie Logiciel sur les convoyeurs
 - [x] Écrire le scénario de test n°1bis : la méthode `stockerforme()` est appelée sur un convoyeur vide avec un paramètre Forme. Réussite : l’attribut stockage contient la Forme.
 - [x] Écrire le scénario de test n°2 : un convoyeur possède une forme1 dans le stockage et `stockerforme()` est appelée. Réussite : l’attribut stockage contient la forme1.
 - [x] Écrire le scénario de test n°2bis : un convoyeur possède une forme1 dans l’attribut forme et une forme2 dans l’attribut stockage. `ajouterforme()` est appelée. Réussite : l’attribut forme contient la forme1 et l’attribut stockage contient la forme2.
-- [ ] Écrire le scénario de test n°3 : deux convoyeurs sont placés successivement, le premier contient une Forme et le second est vide. Appel de `déplacerforme()` sur le convoyeur 1. Réussite : le premier convoyeur est vide et le second contient une forme.
-- [ ] Écrire le scénario de test n°4 : deux convoyeurs sont placés successivement, chacun contenant une forme. Appel de `déplacerforme()` sur le convoyeur 1. Réussite : les deux convoyeurs conservent leur forme.
-- [ ] Écrire le scénario de test n°5 : deux convoyeurs sont placés successivement et contiennent chacun une forme. Après suppression de la forme du convoyeur 2, appeler `déplacerforme()` sur le convoyeur 1. Réussite : le premier convoyeur est vide et le second contient sa forme.
-- [ ] Écrire le scénario de test n°6.
+- [x] Écrire le scénario de test n°3 : deux convoyeurs sont placés successivement, le premier contient une Forme et le second est vide. Appel de `déplacerforme()` sur le convoyeur 1. Réussite : le premier convoyeur est vide et le second contient une forme.
+- [x] Écrire le scénario de test n°4 : deux convoyeurs sont placés successivement, chacun contenant une forme. Appel de `déplacerforme()` sur le convoyeur 1. Réussite : les deux convoyeurs conservent leur forme.
+- [x] Écrire le scénario de test n°5 : deux convoyeurs sont placés successivement et contiennent chacun une forme. Après suppression de la forme du convoyeur 2, appeler `déplacerforme()` sur le convoyeur 1. Réussite : le premier convoyeur est vide et le second contient sa forme.
+- [ ] Écrire le scénario de test n°6. ???
 - [ ] Écrire le scénario de test n°7 : vérifier les destinations de quatre convoyeurs placés sur les cases indiquées et orientés selon les règles établies.
 - [ ] Écrire le scénario de test n°7bis : modifier la sortie de C1 vers l’est et vérifier que C1.destination = C2.
 - [ ] Écrire le scénario de test n°8 : un convoyeur sans destination contenant une forme appelle `déplacerforme()`. Réussite : il conserve sa forme.
@@ -32,7 +32,7 @@ Dépôt Git pour le TD de Génie Logiciel sur les convoyeurs
 - [x] Écrire la classe CelluleOriente et son enum.
 - [ ] Écrire les tests unitaires de la classe CelluleOriente.
 - [x] Écrire la classe Cellule.
-- [x] Écrire les tests unitaires de la classe Cellule, notamment la vérification de `estlibre()`. (Louis Cambier)
+- [x] Écrire les tests unitaires de la classe Cellule, notamment la vérification de `estlibre()`. (FONCTIONNEL ET TESTÉ)
 - [x] Écrire la classe Tapis, avec un constructeur prenant une cellule vide, une direction d’entrée et une direction de sortie.
 - [ ] Écrire les tests unitaires de la classe Tapis.
 - [ ] Écrire la méthode `update()` de la classe Grille.

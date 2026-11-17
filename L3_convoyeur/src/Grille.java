@@ -16,6 +16,10 @@ public class Grille {
         return instance;
     }
 
+    public Cellule[][] getGrille(){
+        return this.grille;
+    }
+
     public Convoyeur[] getConvoyeurs() {
         ArrayList<Convoyeur> convoyeurs = new ArrayList<>();
         for (int x = 0; x < grille.length; x++) {
