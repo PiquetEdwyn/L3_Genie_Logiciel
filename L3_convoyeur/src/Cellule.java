@@ -1,18 +1,18 @@
 package src;
 
 public class Cellule {
-    private Machine machine;
+    private Convoyeur convoyeur;
 
     public boolean est_libre() {
-        return machine == null; // if machine est null (donc que la case est libre car aucune machine dessus) return true, sinon return false
+        return convoyeur == null; // if convoyeur est null (donc que la case est libre car aucune convoyeur dessus) return true, sinon return false
     }
 
-    public void setMachine(Machine newMachine) {
-        this.machine = newMachine;
+    public void setConvoyeur(Convoyeur new_convoyeur) {
+        this.convoyeur = new_convoyeur;
     }
 
-    public Machine getMachine() {
-        return machine;
+    public Convoyeur getConvoyeur() {
+        return convoyeur;
     }
 
     public String toString() {
