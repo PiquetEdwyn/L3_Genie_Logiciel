@@ -5,7 +5,7 @@ public class Cellule {
     private int y;
     private Convoyeur convoyeur;
 
-    Cellule(int pos_x, int pos_y) {
+    public Cellule(int pos_x, int pos_y) {
         this.x = pos_x;
         this.y = pos_y;
         this.convoyeur = null;

@@ -4,7 +4,7 @@ public class CelluleOriente {
     private Cardinal direction;
     private Cellule cellule;
 
-    CelluleOriente(Cardinal direction, Cellule cellule) {
+    public CelluleOriente(Cardinal direction, Cellule cellule) {
         this.direction = direction;
         this.cellule = cellule;
     }
