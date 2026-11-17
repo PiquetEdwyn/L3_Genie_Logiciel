@@ -1,96 +1,79 @@
 package L3_convoyeur.test;
-
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import static org.junit.Assert.*;
 import static org.junit.jupiter.api.Assertions.*;
-
- class TestTapis{
-    private :
-        CelluleOriente[1] entrees;
-        CelluleOriente[1] sorties;
-        Tapis tapis ;
-    @BeforeEach
-        void SetUp(){
-            entrees = new Tapis();
-        }
-    // Test 1 : Vérifier que la Tapis existe
-    @Test
-    void testCreationTapis() {
-        assertNotNull(entree);
-    }
-
-
-
-
-
- }
-
-
-
-
-
 
 
 class TapisTest {
 
-    private Tapis tapis;
-
-    @BeforeEach
-    void setUp() {
-        // Initialisation du tapis
-        // À compléter selon le constructeur réel
-    }
-
+    // Test 1 : Vérifier la création du tapis
     @Test
-    void creationTapis() {
+    void testCreation() {
+
+        Cellule cellule = new Cellule();
+
+        Tapis tapis = new Tapis(cellule, Cardinal.NORD, Cardinal.SUD);
+
+        // Vérifier que le tapis existe
         assertNotNull(tapis);
     }
 
+    // Test 2 : Vérifier les entrées du tapis
     @Test
-    void entreeLibre() {
-        // Vérifier que l'entrée est libre
+    void testEntrees() {
+
+        Cellule cellule = new Cellule();
+        Tapis tapis = new Tapis(cellule, Cardinal.NORD, Cardinal.SUD);
+
+        // Vérifier que le tableau des entrées existe
+        assertNotNull(tapis.getEntrees());
+
+        // Vérifier qu'il y a exactement une entrée
+        assertEquals(1, tapis.getEntrees().length);
     }
 
+    // Test 3 : Vérifier les sorties du tapis
     @Test
-    void sortieLibre() {
-        // Vérifier que la sortie est libre
+    void testSorties() {
+
+        Cellule cellule = new Cellule();
+        Tapis tapis = new Tapis(cellule, Cardinal.NORD, Cardinal.SUD);
+
+        // Vérifier que le tableau des sorties existe
+        assertNotNull(tapis.getSorties());
+
+        // Vérifier qu'il y a exactement une sortie
+        assertEquals(1, tapis.getSorties().length);
     }
 
+    // Test 4 : Vérifier le setter des entrées
     @Test
-    void entreeOccupee() {
-        // Vérifier le comportement
-        // lorsque l'entrée est occupée
+    void testSetEntrees() {
+
+        Cellule cellule = new Cellule();
+        Tapis tapis = new Tapis(cellule, Cardinal.NORD, Cardinal.SUD);
+
+        CelluleOriente[] nouvellesEntrees = new CelluleOriente[1];
+
+        // Modifier les entrées du tapis
+        tapis.setEntrees(nouvellesEntrees);
+
+        // Vérifier que les nouvelles entrées sont enregistrées
+        assertSame(nouvellesEntrees, tapis.getEntrees());
     }
 
+    // Test 5 : Vérifier le setter des sorties
     @Test
-    void sortieOccupee() {
-        // Vérifier le comportement
-        // lorsque la sortie est occupée
-    }
+    void testSetSorties() {
 
-    @Test
-    void transfertForme() {
-        // Vérifier le transfert d'une forme
-    }
+        Cellule cellule = new Cellule();
+        Tapis tapis = new Tapis(cellule, Cardinal.NORD, Cardinal.SUD);
 
-    @Test
-    void blocageTapis() {
-        // Vérifier le blocage du tapis
-    }
+        CelluleOriente[] nouvellesSorties = new CelluleOriente[1];
 
-    @Test
-    void repriseTransfert() {
-        // Vérifier la reprise après blocage
-    }
+        // Modifier les sorties du tapis
+        tapis.setSorties(nouvellesSorties);
 
-    @Test
-    void conservationForme() {
-        // Vérifier qu'aucune forme n'est perdue
-    }
-
-    @Test
-    void absenceDuplication() {
-        // Vérifier qu'aucune forme n'est dupliquée
+        // Vérifier que les nouvelles sorties sont enregistrées
+        assertSame(nouvellesSorties, tapis.getSorties());
     }
 }
