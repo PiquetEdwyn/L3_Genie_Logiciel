@@ -11,8 +11,8 @@ public class Forme {
         return this.identifiant;
     }
 
-    public void setIdentifiant(int newID) {
-        this.identifiant = newID;
+    public void setIdentifiant(int new_identifiant) {
+        this.identifiant = new_identifiant;
     }
 
     public String toString() {

@@ -1,22 +1,22 @@
 package src;
 
 public class Tapis extends Convoyeur {
-    private CelluleOriente[] entrees;
-    private CelluleOriente[] sorties;
+    private CelluleOriente[] entrees = new CelluleOriente[1];
+    private CelluleOriente[] sorties = new CelluleOriente[1];
 
 
-    Tapis(Cellule cellule, Direction cardinalentree, Direction cardinalsortie) {
+    Tapis(Cellule cellule, Cardinal direction_entree, Cardinal direction_sortie) {
         if (cellule.est_libre() == false) {
             System.err.println("La cellule n'est pas libre !");
             return;
         }
 
         this.entrees = new CelluleOriente[] {
-            new CelluleOriente(cardinalentree, cellule)
+            new CelluleOriente(direction_entree, cellule)
         };
 
         this.sorties = new CelluleOriente[] {
-            new CelluleOriente(cardinalsortie, cellule)
+            new CelluleOriente(direction_sortie, cellule)
         };
     }
 
