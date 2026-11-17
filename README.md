@@ -13,8 +13,8 @@ Dépôt Git pour le TD de Génie Logiciel sur les convoyeurs
 ## Avancée du projet
 
 - [x] Créer le dossier du projet et les fichiers pour les différentes classes. Inclure un dossier de tests, il y aura au minimum un fichier de test par classes. (Groupe)
-- [ ] Écrire le scénario de test n°1 : un convoyeur vide possède une forme dans le stockage et ajouterforme() est appelée. Réussite : l’attribut forme contient la Forme et l’attribut stockage est vide. sivement (selon les règles établies), le premier contient un Forme dans l’attribut forme et le
-- [ ] Écrire le scénario de test n°1bis : la méthode `stockerforme()` est appelée sur un convoyeur vide avec un paramètre Forme. Réussite : l’attribut stockage contient la Forme.
+- [x] Écrire le scénario de test n°1 : un convoyeur vide possède une forme dans le stockage et ajouterforme() est appelée. Réussite : l’attribut forme contient la Forme et l’attribut stockage est vide. sivement (selon les règles établies), le premier contient un Forme dans l’attribut forme et le
+- [x] Écrire le scénario de test n°1bis : la méthode `stockerforme()` est appelée sur un convoyeur vide avec un paramètre Forme. Réussite : l’attribut stockage contient la Forme.
 - [ ] Écrire le scénario de test n°2 : un convoyeur possède une forme1 dans le stockage et `stockerforme()` est appelée. Réussite : l’attribut stockage contient la forme1.
 - [ ] Écrire le scénario de test n°2bis : un convoyeur possède une forme1 dans l’attribut forme et une forme2 dans l’attribut stockage. `ajouterforme()` est appelée. Réussite : l’attribut forme contient la forme1 et l’attribut stockage contient la forme2.
 - [ ] Écrire le scénario de test n°3 : deux convoyeurs sont placés successivement, le premier contient une Forme et le second est vide. Appel de `déplacerforme()` sur le convoyeur 1. Réussite : le premier convoyeur est vide et le second contient une forme.
