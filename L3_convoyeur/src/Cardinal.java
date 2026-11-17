@@ -1,6 +1,6 @@
 package src;
 
-enum Direction {
+public enum Cardinal {
     Nord,
     Sud,
     Est,

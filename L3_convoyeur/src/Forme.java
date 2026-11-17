@@ -3,7 +3,7 @@ package src;
 public class Forme {
     private int identifiant;
 
-    Forme(int id) {
+    public Forme(int id) {
         identifiant = id;
     }
 
