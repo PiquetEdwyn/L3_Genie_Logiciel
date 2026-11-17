@@ -5,6 +5,7 @@ public class Tapis extends Convoyeur {
     private CelluleOriente[] sorties = new CelluleOriente[1];
 
 
+    // Construit un tapis à partir d'une cellule vide et de 2 directions pour l'entrée et la sortie
     Tapis(Cellule cellule, Cardinal direction_entree, Cardinal direction_sortie) {
         if (cellule.est_libre() == false) {
             System.err.println("La cellule n'est pas libre !");
