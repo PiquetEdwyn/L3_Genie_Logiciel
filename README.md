@@ -37,7 +37,7 @@ Dépôt Git pour le TD de Génie Logiciel sur les convoyeurs
 - [ ] Écrire les tests unitaires de la classe Tapis.
 - [ ] Écrire la méthode `update()` de la classe Grille.
 - [ ] Écrire le reste de la classe Grille.
-- [ ] Écrire les tests unitaires de la classe Grille.
+- [x] Écrire les tests unitaires de la classe Grille.
 - [ ] Écrire la méthode `estdisponible()` de la classe Convoyeur.
 - [ ] Écrire la méthode `destination()` de la classe Convoyeur.
 - [ ] Écrire la méthode `déplacerforme()` de la classe Convoyeur.
