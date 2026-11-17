@@ -18,6 +18,8 @@ public abstract class Convoyeur {
     // observer est la liste des observeur
     private ArrayList<Observer> observer;
 
+    // grille : singloton
+    private Grille grille;
 
     /*
         Getter pour entrees
@@ -55,38 +57,78 @@ public abstract class Convoyeur {
         return  this.observer;
     }
     
+    
+    
     /*
         estDisponible() : renvoie un boolean
     */
     public boolean estDisponible()
     {
-        return !(this.forme == null);
+        
+        if(this.forme != null)
+        {
+            return false;
+        }
+        if(this.stockage != null)
+        {
+            return false;
+        }
+        return true;
+
     }
 
     /*
         destination() : renvoie la machine suivante
     */
-    public Machine destination()
+    public Convoyeur destination()
     {
-        return 
-    }
+        if(this.sorties != null)
+        {
+            Machine dest;
+            Cardinal direction = sorties[0].getCardinal();
+            int x = sorties[0].getX();
+            int y = sorties[0].getY();
 
+            if(direction == 'Nord')
+            {
+                return this.grille.getConvoyeur(x+1,y);
+            }
+            if(direction == 'Sud')
+            {
+                return  this.grille.getConvoyeur(x,y-1);
+            }
+            if(direction == 'Ouest')
+            {
+                return  this.getConvoyeur(x-1,y);
+            }
+            if(direction == 'Est')
+            {
+                return this.getConvoyeur(x,y-1);
+            }
+
+        }
+    }
     /*
-    
+        deplacerForme() : transfert la forme f de la var forme vers le stockage de la suivante
+            met a null la var forme
     */
     public void deplacerForme()
     {
-
+        if(this.forme != null)
+        {
+            Forme f = getForme();
+            Convoyeur des = destination();
+            des.stockerForme(f);
+            this.forme = null;
+        }
     }
 
     /*
-        extraireForme() : deplace la forme stocker dans 
-            le conveyeur vers la variable `forme`
+        extraireForme() : met a null la ver forme
     */
     public void extraireForme()
     {
-        this.forme = this.stockage;
-        this.stockage = null;
+        this.forme = null;
     }
     /*
         stockerForme() : Stocke la forme placer en parametre 
@@ -95,23 +137,30 @@ public abstract class Convoyeur {
     */
     public void stockerForme(Forme f)
     {
-        this.stockage = f;
+        if(stockage == null)
+        {
+            this.stockage = f;
+        }
     }
 
     /*
-    
+        ajouterForme() : Transfert la forme de la var stockage vers la var forme
+            et met a null la var stockage
     */
     public void ajouterForme()
     {
-        this.fomre = this.stockage
-        this.stockage = null;
+        if(this.forme == null && this.stockage != null)
+        {
+            this.forme=this.stockage;
+            this.stockage = null;
+        }    
     }
 
     /*
     
     */
-   public Cellule emplacement()
-   {
-
-   }
+    public Cellule emplacement()
+    {
+        return this.entrees[0].getCase();
+    }
 }
