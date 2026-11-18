@@ -151,7 +151,7 @@ public abstract class Convoyeur {
     */
     public void ajouterForme()
     {
-        this.fomre = this.stockage
+        this.forme = this.stockage;
         this.stockage = null;
     }
 
@@ -160,6 +160,6 @@ public abstract class Convoyeur {
     */
    public Cellule emplacement()
    {
-
+        return null;
    }
 }
