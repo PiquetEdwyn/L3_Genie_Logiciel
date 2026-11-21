@@ -21,11 +21,11 @@ Dépôt Git pour le TD de Génie Logiciel sur les convoyeurs
 - [x] Écrire le scénario de test n°4 : deux convoyeurs sont placés successivement, chacun contenant une forme. Appel de `déplacerforme()` sur le convoyeur 1. Réussite : les deux convoyeurs conservent leur forme.
 - [x] Écrire le scénario de test n°5 : deux convoyeurs sont placés successivement et contiennent chacun une forme. Après suppression de la forme du convoyeur 2, appeler `déplacerforme()` sur le convoyeur 1. Réussite : le premier convoyeur est vide et le second contient sa forme.
 - [ ] Écrire le scénario de test n°6. ???
-- [ ] Écrire le scénario de test n°7 : vérifier les destinations de quatre convoyeurs placés sur les cases indiquées et orientés selon les règles établies.
-- [ ] Écrire le scénario de test n°7bis : modifier la sortie de C1 vers l’est et vérifier que C1.destination = C2.
-- [ ] Écrire le scénario de test n°8 : un convoyeur sans destination contenant une forme appelle `déplacerforme()`. Réussite : il conserve sa forme.
-- [ ] Écrire le scénario de test n°9 : vérifier les destinations de trois convoyeurs placés successivement.
-- [ ] Écrire le scénario de test n°9bis : appeler `update()` avec des formes sur C1 et C3. Réussite : C2 contient f1 et C3 contient f3.
+- [x] Écrire le scénario de test n°7 : vérifier les destinations de quatre convoyeurs placés sur les cases indiquées et orientés selon les règles établies.
+- [x] Écrire le scénario de test n°7bis : modifier la sortie de C1 vers l’est et vérifier que C1.destination = C2.
+- [x] Écrire le scénario de test n°8 : un convoyeur sans destination contenant une forme appelle `déplacerforme()`. Réussite : il conserve sa forme.
+- [x] Écrire le scénario de test n°9 : vérifier les destinations de trois convoyeurs placés successivement.
+- [x] Écrire le scénario de test n°9bis : appeler `update()` avec des formes sur C1 et C3. Réussite : C2 contient f1 et C3 contient f3.
 - [ ] Écrire le scénario de test n°10 : créer un schéma de plusieurs convoyeurs, lister les formes présentes, appeler `update()` plusieurs fois et vérifier que la liste des formes reste identique.
 - [x] Écrire la classe Forme.
 - [ ] Écrire les tests unitaires de la classe Forme.
