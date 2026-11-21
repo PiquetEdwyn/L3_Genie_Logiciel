@@ -80,33 +80,31 @@ public abstract class Convoyeur {
     /*
         destination() : renvoie la machine suivante
     */
-    public Convoyeur destination()
-    {
+    public Convoyeur destination(){
         if(this.sorties != null)
         {
-            Machine dest;
             Cardinal direction = sorties[0].getCardinal();
-            int x = sorties[0].getX();
-            int y = sorties[0].getY();
+            int x = sorties[0].getCase().getX();
+            int y = sorties[0].getCase().getY();
 
-            if(direction == "Nord")
+            if(direction == Cardinal.Nord)
             {
                 return this.grille.getConvoyeur(x+1,y);
             }
-            if(direction == "Sud")
+            if(direction == Cardinal.Sud)
             {
                 return  this.grille.getConvoyeur(x,y-1);
             }
-            if(direction == "Ouest")
+            if(direction == Cardinal.Ouest)
             {
-                return  this.getConvoyeur(x-1,y);
+                return  this.grille.getConvoyeur(x-1,y);
             }
-            if(direction == "Est")
+            if(direction == Cardinal.Est)
             {
-                return this.getConvoyeur(x,y-1);
+                return this.grille.getConvoyeur(x,y-1);
             }
-
         }
+        return null;
     }
     /*
         deplacerForme() : transfert la forme f de la var forme vers le stockage de la suivante

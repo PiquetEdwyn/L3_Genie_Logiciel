@@ -1,15 +1,12 @@
-package L3_convoyeur.test;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import static org.junit.Assert.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 class GrilleTest {
     private Grille grille;
     @BeforeEach
     void setUp() {
-        grille = new Grille();
+        grille = Grille.getGrille(10, 10);
     }
     // Test 1 : Vérifier que la grille existe
     @Test

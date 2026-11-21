@@ -1,4 +1,3 @@
-package L3_convoyeur.test;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -9,9 +8,9 @@ class TapisTest {
     @Test
     void testCreation() {
 
-        Cellule cellule = new Cellule();
+        Cellule cellule = new Cellule(5,5);
 
-        Tapis tapis = new Tapis(cellule, Cardinal.NORD, Cardinal.SUD);
+        Tapis tapis = new Tapis(cellule, Cardinal.Nord, Cardinal.Sud);
 
         // Vérifier que le tapis existe
         assertNotNull(tapis);
@@ -21,8 +20,8 @@ class TapisTest {
     @Test
     void testEntrees() {
 
-        Cellule cellule = new Cellule();
-        Tapis tapis = new Tapis(cellule, Cardinal.NORD, Cardinal.SUD);
+        Cellule cellule = new Cellule(5,5);
+        Tapis tapis = new Tapis(cellule, Cardinal.Nord, Cardinal.Sud);
 
         // Vérifier que le tableau des entrées existe
         assertNotNull(tapis.getEntrees());
@@ -35,8 +34,8 @@ class TapisTest {
     @Test
     void testSorties() {
 
-        Cellule cellule = new Cellule();
-        Tapis tapis = new Tapis(cellule, Cardinal.NORD, Cardinal.SUD);
+        Cellule cellule = new Cellule(5,5);
+        Tapis tapis = new Tapis(cellule, Cardinal.Nord, Cardinal.Sud);
 
         // Vérifier que le tableau des sorties existe
         assertNotNull(tapis.getSorties());
@@ -49,8 +48,8 @@ class TapisTest {
     @Test
     void testSetEntrees() {
 
-        Cellule cellule = new Cellule();
-        Tapis tapis = new Tapis(cellule, Cardinal.NORD, Cardinal.SUD);
+        Cellule cellule = new Cellule(5,5);
+        Tapis tapis = new Tapis(cellule, Cardinal.Nord, Cardinal.Sud);
 
         CelluleOriente[] nouvellesEntrees = new CelluleOriente[1];
 
@@ -65,8 +64,8 @@ class TapisTest {
     @Test
     void testSetSorties() {
 
-        Cellule cellule = new Cellule();
-        Tapis tapis = new Tapis(cellule, Cardinal.NORD, Cardinal.SUD);
+        Cellule cellule = new Cellule(5,5);
+        Tapis tapis = new Tapis(cellule, Cardinal.Nord, Cardinal.Sud);
 
         CelluleOriente[] nouvellesSorties = new CelluleOriente[1];
 
