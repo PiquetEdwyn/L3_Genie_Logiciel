@@ -9,24 +9,19 @@ public class Tapis extends Convoyeur {
             System.err.println("La cellule n'est pas libre !");
             return;
         }
-
         this.entrees = new CelluleOriente[] {
             new CelluleOriente(direction_entree, cellule)
         };
-
         this.sorties = new CelluleOriente[] {
             new CelluleOriente(direction_sortie, cellule)
         };
     }
-
     public CelluleOriente[] getEntrees() {
         return entrees;
     }
-
     public void setEntrees(CelluleOriente[] newEntrees) {
         this.entrees = newEntrees;
     }
-
     public CelluleOriente[] getSorties() {
         return sorties;
     }
