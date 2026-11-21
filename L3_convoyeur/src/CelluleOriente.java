@@ -1,5 +1,3 @@
-package src;
-
 public class CelluleOriente {
     private Cardinal direction;
     private Cellule cellule;

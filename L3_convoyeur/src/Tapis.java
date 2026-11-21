@@ -1,5 +1,3 @@
-package src;
-
 public class Tapis extends Convoyeur {
     private CelluleOriente[] entrees = new CelluleOriente[1];
     private CelluleOriente[] sorties = new CelluleOriente[1];

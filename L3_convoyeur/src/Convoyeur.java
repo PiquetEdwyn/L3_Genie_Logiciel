@@ -1,5 +1,3 @@
-package src;
-
 import java.util.ArrayList;
 import java.util.Observer;
 
@@ -11,7 +9,7 @@ public abstract class Convoyeur {
     // sorties la direction de la sortie
     private CelluleOriente[] sorties;
 
-    // forme est la forme transformer 
+    // forme est la forme transformer
     private Forme forme;
 
     // stockage est la forme garder dans la machine
@@ -58,15 +56,15 @@ public abstract class Convoyeur {
     {
         return  this.observer;
     }
-    
-    
-    
+
+
+
     /*
         estDisponible() : renvoie un boolean
     */
     public boolean estDisponible()
     {
-        
+
         if(this.forme != null)
         {
             return false;
@@ -91,19 +89,19 @@ public abstract class Convoyeur {
             int x = sorties[0].getX();
             int y = sorties[0].getY();
 
-            if(direction == 'Nord')
+            if(direction == "Nord")
             {
                 return this.grille.getConvoyeur(x+1,y);
             }
-            if(direction == 'Sud')
+            if(direction == "Sud")
             {
                 return  this.grille.getConvoyeur(x,y-1);
             }
-            if(direction == 'Ouest')
+            if(direction == "Ouest")
             {
                 return  this.getConvoyeur(x-1,y);
             }
-            if(direction == 'Est')
+            if(direction == "Est")
             {
                 return this.getConvoyeur(x,y-1);
             }
@@ -133,7 +131,7 @@ public abstract class Convoyeur {
         this.forme = null;
     }
     /*
-        stockerForme() : Stocke la forme placer en parametre 
+        stockerForme() : Stocke la forme placer en parametre
             dans le conyeur
         @Param : Forme f
     */
@@ -156,7 +154,7 @@ public abstract class Convoyeur {
     }
 
     /*
-    
+
     */
    public Cellule emplacement()
    {

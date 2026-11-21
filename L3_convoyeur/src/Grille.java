@@ -1,4 +1,3 @@
-package src;
 import java.util.ArrayList;
 
 public class Grille {
@@ -39,7 +38,7 @@ public class Grille {
     }
 
     public void update() {
-        Convoyeur[] convoyeurs = getConvoyeurs(); 
+        Convoyeur[] convoyeurs = getConvoyeurs();
         for (Convoyeur convoyeur : convoyeurs) {
             if (!convoyeur.estDisponible()) {
 
