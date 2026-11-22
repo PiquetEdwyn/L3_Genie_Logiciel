@@ -35,8 +35,8 @@ Dépôt Git pour le TD de Génie Logiciel sur les convoyeurs
 - [x] Écrire les tests unitaires de la classe Cellule, notamment la vérification de `estlibre()`. (FONCTIONNEL ET TESTÉ)
 - [x] Écrire la classe Tapis, avec un constructeur prenant une cellule vide, une direction d’entrée et une direction de sortie.
 - [ ] Écrire les tests unitaires de la classe Tapis.
-- [ ] Écrire la méthode `update()` de la classe Grille.
-- [ ] Écrire le reste de la classe Grille.
+- [x] Écrire la méthode `update()` de la classe Grille.
+- [x] Écrire le reste de la classe Grille.
 - [x] Écrire les tests unitaires de la classe Grille.
 - [ ] Écrire la méthode `estdisponible()` de la classe Convoyeur.
 - [ ] Écrire la méthode `destination()` de la classe Convoyeur.
