@@ -16,6 +16,10 @@ public class Grille {
         return instance;
     }
 
+    public Cellule[][] getGrille() {
+        return grille;
+    }
+
     public Convoyeur[] getConvoyeurs() {
         ArrayList<Convoyeur> convoyeurs = new ArrayList<>();
         for (int x = 0; x < grille.length; x++) {
@@ -38,8 +42,16 @@ public class Grille {
         Convoyeur[] convoyeurs = getConvoyeurs(); 
         for (Convoyeur convoyeur : convoyeurs) {
             if (!convoyeur.estDisponible()) {
-
+                convoyeur.deplacerForme();
+                Convoyeur next = convoyeur.destination();
+                boolean dispo = next.estDisponible();
+                if (dispo) {
+                    Forme forme = convoyeur.getForme();
+                    convoyeur.extraireForme();
+                    next.stockerForme(forme);
+                }
             }
+            convoyeur.ajouterForme();
         }
         return;
     }
